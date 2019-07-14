@@ -1,0 +1,65 @@
+﻿@model List<Registro.Models.Votazione>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Votazioni Studenti</h1>
+
+        <table border="1">
+            @foreach (Registro.Models.Votazione v in Model)
+            {
+                <tr>
+                    <td>@v.Allievo</td><!--dalla chiocciola in poi si indica il codice in c#-->
+                    <td>@v.Voto</td>
+                    <td>@v.Peso</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    <p />
+    <input type="button" onclick="window.location.href='/Registro/NewVotazione'" value="Nuovo" />
+    <input type="button" id="Calcola" onclick="EseguiCalcolo();" value="Calcola Media" />
+    <p />
+    <input type="text" id="Media"/>
+
+    <script>
+    function EseguiCalcolo() {
+        var voti = new Array();
+        var voto = new Object();
+        @foreach (Registro.Models.Votazione v in Model)
+        {
+        @: voto = new Object();
+        @:voto.Allievo = "@v.Allievo";
+        @:voto.Voto = @v.Voto;
+        @:voto.Peso = @v.Peso;
+        @:voti.push(voto);
+        }
+        $.ajax({
+            url: 'http://localhost:64924/api/Media',
+            type: 'POST',
+            dataType: 'json',
+            data: { myArray: voti },
+            success: function (data, textStatus, xhr) {
+                $("#Media").val(data.value);
+            },
+            error: function (data, textStatus, xhr) {
+                $("#Media").val("Error calling web service");
+            }
+
+        });
+    }
+    </script>
+
+</body>
+</html>

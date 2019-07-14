@@ -1,0 +1,15 @@
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\MyClientApp.exe.config
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\MyClientApp.exe
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\MyClientApp.pdb
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.csprojAssemblyReference.cache
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.Form1.resources
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.Properties.Resources.resources
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.csproj.GenerateResource.cache
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.csproj.CoreCompileInputs.cache
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.csproj.CopyComplete
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.exe
+C:\Users\Giulio\source\repos\MyClientApp\MyClientApp\obj\Debug\MyClientApp.pdb

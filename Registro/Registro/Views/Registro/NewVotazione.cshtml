@@ -1,0 +1,34 @@
+﻿@model Registro.Models.Votazione
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NewVotazione</title>
+</head>
+<body>
+    <div> 
+        <form method="post" action="@Url.Action("SaveNewVotazione","Registro")">
+
+            Allievo:
+            <input type="text" id="Allievo" name="Allievo" />
+            <br />
+            @Html.LabelFor(m => m.Voto, "Voto:")
+            @Html.TextBoxFor(m => m.Voto)
+            <br />
+
+            @Html.LabelFor(m => m.Peso, "Peso:")
+            @Html.TextBoxFor(m => m.Peso)
+            <br />
+
+            <input type="submit" id="Salva" name="Salva" value="Salva" />
+            <input type="submit" id="Salva2" name="Salva2" value="Salva e Prosegui" />
+            <input type="button" value="Annulla" onclick="window.location.href='..'" />
+        </form>
+    </div>
+</body>
+</html>
